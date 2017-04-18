@@ -62,7 +62,7 @@ enable_backport_repos
 if [[ -n "$(uname -m | grep arm)" ]]
 then
         # Use special conf for arm arch because some binary are not available in jessie backport or in matrix repos
-        install_arm_package_dep
+        # install_arm_package_dep
         ynh_package_install -t $debian_version-backports -f
         echo "deb [arch=i386] http://matrix.org/packages/debian/ $debian_version main" | sudo tee -a "/etc/apt/sources.list.d/matrix.list"
         ynh_package_update
