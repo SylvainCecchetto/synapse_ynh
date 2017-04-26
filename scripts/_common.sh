@@ -8,7 +8,7 @@ python_ujson_version="1.35-1"
 
 init_script() {
     # Exit on command errors and treat unset variables as an error
-    set -eu
+    # set -eu
 
     # Source YunoHost helpers
     source /usr/share/yunohost/helpers
